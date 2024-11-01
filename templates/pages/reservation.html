@@ -1,0 +1,157 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+  <div class="second-page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Забронируйте приоритетное предложение здесь</h4>
+          <h2>Сделайте бронирование</h2>
+
+          <div class="main-button"><a href="{% url 'about' %}">Узнайте больше</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-info reservation-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-phone"></i>
+            <h4>Позвонить по телефону</h4>
+            <a href="https://zadarma.com/ru/services/calls/from-computer/" target="_blank">+996 (706) 694 251</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-envelope"></i>
+            <h4>Свяжитесь с нами по электронной почте</h4>
+            <a href="https://www.mail.kg/" target="_blank">aidai@email.com</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-map-marker"></i>
+            <h4>Посетить наши офисы</h4>
+           <a href="https://en.wikipedia.org/wiki/Kyrgyzstan" target="_blank">Kyrgyzstan</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reservation-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="map">
+            <iframe src="{% static 'assets/images/1.jpeg' %}" width="500%" height="648px" frameborder="0" style="border:0; border-top-left-radius: 23px; border-top-right-radius: 23px;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <form id="reservation-form" name="gs" method="submit" role="search" action="#">
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Сделай <em> бронирование </em> через <em> эту форму </em></h4>
+              </div>
+              <div class="col-lg-6">
+                  <fieldset>
+                      <label for="Name" class="form-label">Name</label>
+                      <input type="text" name="Name" class="Name" placeholder="Your Name" autocomplete="on" required>
+                  </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                    <label for="Number" class="form-label">Phone Number</label>
+                    <input type="text" name="Number" class="Number" placeholder="Your Phone Number" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                  <fieldset>
+                      <label for="chooseGuests" class="form-label">Number Of Guests</label>
+                      <select name="Guests" class="form-select" aria-label="Default select example" id="chooseGuests" onChange="this.form.click()">
+                          <option selected>Number Of Guests</option>
+                          <option type="checkbox" name="option1" value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+<!--                          <option value="4+">4+</option>-->
+                      </select>
+                  </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                    <label for="Number" class="form-label">Check In Date</label>
+                    <input type="date" name="date" class="date" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                  <fieldset>
+                      <label for="chooseDestination" class="form-label">Destination</label>
+                      <select name="Destination" class="form-select" aria-label="Default select example" id="chooseCategory" onChange="this.form.click()">
+                          <option selected>Choose Your Destination</option>
+                          <option value="Italy, Roma">Italy, Roma</option>
+                          <option value="France, Paris">France, Paris</option>
+                          <option value="Engaland, London">Engaland, London</option>
+                          <option value="Switzerland, Lausanne">Switzerland, Lausanne</option>
+                      </select>
+                  </fieldset>
+              </div>
+              <div class="col-lg-12">
+                  <fieldset>
+                      <button class="main-button">Забронируйте Сейчас</button>
+                  </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Вы хотите путешествовать?</h2>
+          <h4>Сделайте заказ, нажав кнопку</h4>
+        </div>
+        <div class="col-lg-4">
+          <div class="border-button">
+            <a href="{% url 'reservation' %}">забронируй сейчас</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(".option").click(function(){
+      $(".option").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script>
+
+  </body>
+
+</html>
+{% endblock %}

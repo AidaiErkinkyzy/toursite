@@ -1,0 +1,305 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section id="section-1">
+    <div class="content-slider">
+      <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+      <input type="radio" id="banner2" class="sec-1-input" name="banner">
+      <input type="radio" id="banner3" class="sec-1-input" name="banner">
+      <input type="radio" id="banner4" class="sec-1-input" name="banner">
+      <div class="slider">
+
+
+
+        <div id="top-banner-1" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Взгляните на прекрасную страну:</h2>
+              <h1>Турция</h1>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Популяция:</span><br>83,614 млн.</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Территория:</span><br>780 580 км².</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>Средняя цена тура:</span><br>$300</h4>
+                      </div>
+
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <div class="main-button">
+                          <a href="{% url 'reservation' %}">Забронировать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="top-banner-2" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Взгляните на прекрасную страну:</h2>
+              <h1>Италия</h1>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Популяция:</span><br>58,997 млн.</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Территория:</span><br>301,3 тыс. км².</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>Средняя цена тура:</span><br>$900</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <div class="main-button">
+                          <a href="{% url 'reservation' %}">Забронировать</a>
+                        </div>
+                      </div>>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="top-banner-3" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Взгляните на прекрасную страну:</h2>
+              <h1>ОАЭ</h1>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Популяция:</span><br> 9 млн.</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Территория:</span><br>83.000 км.</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>Средняя цена тура:</span><br>$425</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <div class="main-button">
+                          <a href="{% url 'reservation' %}">Забронировать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="top-banner-4" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Взгляните на прекрасную страну:</h2>
+              <h1>Греция</h1>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Популяция:</span><br>10,4 млн.</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Территория:</span><br>131 944 км².</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>Средняя цена тура:</span><br>$450</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <div class="main-button">
+                          <a href="{% url 'reservation' %}">Забронировать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="controls">
+          <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text"></span></label>
+          <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text"></span></label>
+          <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text"></span></label>
+          <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text"></span></label>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+ <div class="visit-country">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="section-heading">
+            <h2>Посетите одну из наших стран прямо сейчас</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="items">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="item">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-5">
+                      <div class="image">
+                        <img src="{% static 'assets/images/country-01.jpg' %}" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-7">
+                      <div class="right-content">
+                        <h4>ШВЕЙЦАРИЯ</h4>
+                        <span>Европа</span>
+                        <div class="main-button">
+                          <a href="{% url 'about' %}">Узнайте больше</a>
+                        </div>
+                        <p>Швейцария — одна из самых развитых стран мира, с самым высоким номинальным богатством взрослого населения и восьмым по величине ВВП на душу населения.</p>
+                        <ul class="info">
+                          <li><i class="fa fa-user"></i> 8.66 Mil People</li>
+                          <li><i class="fa fa-globe"></i> 41.290 km2</li>
+                        </ul>
+                        <div class="text-button">
+                          <a href="{% url 'about' %}">Нужны направления?<i class="fa fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-12">
+                <div class="item">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-5">
+                      <div class="image">
+                        <img src="{% static 'assets/images/country-02.jpg' %}" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-7">
+                      <div class="right-content">
+                        <h4>КАРИБЫ</h4>
+                        <span>Северная Америка</span>
+                        <div class="main-button">
+                          <a href="{% url 'about' %}">Узнайте больше</a>
+                        </div>
+                        <p>Карибские острова — идеальное место для сноркелинга и подводных экскурсий. Море здесь настолько же прекрасно, как и земли островов. Белые, розовые и черные песчаные пляжи, омываемые кристально чистыми водами, буквально созданы для отдыха. На архипелаге тысячи островов каждый путешественник найдет что-то свое. От завораживающей природы Доминики до оживленных, наполненных звучанием музыки улиц Коста-Рики — чтобы Вы ни искали, на райских Карабах вы обязательно это найдете.</p>
+                        <ul class="info">
+                          <li><i class="fa fa-user"></i> 44.48 Mil People</li>
+                          <li><i class="fa fa-globe"></i> 275.400 km2</li>
+                        </ul>
+                        <div class="text-button">
+                          <a href="{% url 'about' %}">Нужны направления? <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="item last-item">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-5">
+                      <div class="image">
+                        <img src="{% static 'assets/images/country-03.jpg' %}" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-7">
+                      <div class="right-content">
+                        <h4>ФРАНЦИЯ</h4>
+                        <span>Европа</span>
+                        <div class="main-button">
+                          <a href="{% url 'about' %}">Узнайте больше</a>
+                        </div>
+                        <p>Франция возглавляет топ мирового туризма. Это самая посещаемая туристами страна и россияне всем сердцем любят романтическую столицу мира. Даже те, кто ни разу не был во Франции, наслышаны о той необыкновенной атмосфере, которая царит в этой стране и которую породили Эйфелева башня, Лувр, Нотр-Дам…</p>
+                        <ul class="info">
+                          <li><i class="fa fa-user"></i> 67.41 Mil People</li>
+                          <li><i class="fa fa-globe"></i> 551.500 km2</li>
+                        </ul>
+                        <div class="text-button">
+                          <a href="{% url 'about' %}">Нужны направления? <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Вы хотите путешествовать?</h2>
+          <h4>Сделайте заказ, нажав кнопку</h4>
+        </div>
+        <div class="col-lg-4">
+          <div class="border-button">
+            <a href="{% url 'reservation' %}">забронируй сейчас</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

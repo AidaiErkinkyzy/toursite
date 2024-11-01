@@ -1,0 +1,344 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="about-main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content">
+            <div class="blur-bg"></div>
+            <h4>ИЗУЧАЙТЕ НАШИ СТРАНЫ</h4>
+            <div class="line-dec"></div>
+            <h2>Добро пожаловать в наши страны</h2>
+              <div class="main-button">
+              <a href="{% url 'reservation' %}">Забронировать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+ <div class="cities-town">
+    <div class="container">
+      <div class="row">
+        <div class="slider-content">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Города Карибского острова</h2>
+            </div>
+            <div class="col-lg-12">
+              <div class="owl-cites-town owl-carousel">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="{% static 'assets/images/cities-01.jpg' %}" alt="">
+
+                    <h4>Гавана</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="{% static 'assets/images/cities-02.jpg' %}" alt="">
+
+                    <h4>Кингстон</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="{% static 'assets/images/cities-03.jpg' %}" alt="">
+
+                    <h4>Джорджтаун</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="{% static 'assets/images/cities-04.jpg' %}" alt="">
+
+                    <h4>Санто-Доминго</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="{% static 'assets/images/cities-01.jpg' %}" alt="">
+
+                    <h4>Гавана</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="{% static 'assets/images/cities-02.jpg' %}" alt="">
+                    <h4>Кингстон</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="{% static 'assets/images/cities-03.jpg' %}" alt="">
+                    <h4>Джорджтаун</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="{% static 'assets/images/cities-04.jpg' %}" alt="">
+                    <h4>Санто-Доминго</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="weekly-offers">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading text-center">
+            <h2>Лучшие еженедельные предложения</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-weekly-offers owl-carousel">
+
+
+
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/offers-01.jpg' %}" alt="">
+                <div class="text">
+                  <h4>Турция<br></h4>
+                  <h6>$420<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Сделка включает в себя:</li>
+                    <li><i class="fa fa-taxi"></i> 5-дневная поездка > Отель включен</li>
+                    <li><i class="fa fa-plane"></i> Счет за самолет включен в стоимость</li>
+                    <li><i class="fa fa-building"></i> Ежедневное посещение мест</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="{% url 'reservation' %}">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/offers-03.jpg' %}" alt="">
+                <div class="text">
+                  <h4>Италия<br></h4>
+                  <h6>$500<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Сделка включает в себя:</li>
+                    <li><i class="fa fa-taxi"></i> 5-дневная поездка > Отель включен</li>
+                    <li><i class="fa fa-plane"></i> Счет за самолет включен в стоимость</li>
+                    <li><i class="fa fa-building"></i>Ежедневное посещение мест</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="{% url 'reservation' %}">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/offers-02.jpg' %}" alt="">
+                <div class="text">
+                  <h4>Россия<br></h4>
+                  <h6>$600<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Сделка включает в себя:</li>
+                    <li><i class="fa fa-taxi"></i> 5-дневная поездка > Отель включен</li>
+                    <li><i class="fa fa-plane"></i> Счет за самолет включен в стоимость</li>
+                    <li><i class="fa fa-building"></i> Ежедневное посещение мест</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="{% url 'reservation' %}">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/deals-01.jpg' %}" alt="">
+                <div class="text">
+                  <h4>Англия<br></h4>
+                  <h6>$950<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Сделка включает в себя:</li>
+                    <li><i class="fa fa-taxi"></i> 5-дневная поездка > Отель включен</li>
+                    <li><i class="fa fa-plane"></i> Счет за самолет включен в стоимость</li>
+                    <li><i class="fa fa-building"></i> Ежедневное посещение мест</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="{% url 'reservation' %}">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/deals-02.jpg' %}" alt="">
+                <div class="text">
+                  <h4>Тайланд<br></h4>
+                  <h6>$480<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Сделка включает в себя:</li>
+                    <li><i class="fa fa-taxi"></i> 5-дневная поездка > Отель включен</li>
+                    <li><i class="fa fa-plane"></i> Счет за самолет включен в стоимость</li>
+                    <li><i class="fa fa-building"></i> Ежедневное посещение мест</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="{% url 'reservation' %}">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="item">
+              <div class="thumb">
+                <img src="{% static 'assets/images/deals-03.jpg' %}" alt="">
+                <div class="text">
+                  <h4>Греция<br></h4>
+                  <h6>$780<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Сделка включает в себя:</li>
+                    <li><i class="fa fa-taxi"></i> 5-дневная поездка > Отель включен</li>
+                    <li><i class="fa fa-plane"></i> Счет за самолет включен в стоимость</li>
+                    <li><i class="fa fa-building"></i> Ежедневное посещение мест</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="{% url 'reservation' %}">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="more-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="left-image">
+            <img src="{% static 'assets/images/q.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>Узнайте больше о нашей стране</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-item">
+                <h4>150.640 +</h4>
+                <span>Всего гостей в год</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-item">
+                <h4>175.000+</h4>
+                <span>Удивительные условия проживания</span>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="info-item">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h4>12.560+</h4>
+                    <span>Удивительные места</span>
+                  </div>
+                  <div class="col-lg-6">
+                    <h4>240.580+</h4>
+                    <span>Различные регистрации ежегодно</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-button">
+            <a href="{% url 'reservation' %}">Узнайте больше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+   <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Вы хотите путешествовать?</h2>
+          <h4>Сделайте заказ, нажав кнопку</h4>
+        </div>
+        <div class="col-lg-4">
+          <div class="border-button">
+            <a href="{% url 'reservation' %}">забронируй сейчас</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

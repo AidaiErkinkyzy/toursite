@@ -20,40 +20,32 @@ class RegisterView(CreateView):
     template_name = 'pages/register.html'
     success_url = reverse_lazy('login')
 
-    def form_valid(self, form):
-        response = super().form_valid(form)
-        # Дополнительная проверка и отладка
-        print("Form is valid. Redirecting to success URL.")
-        return response
-
-    def form_invalid(self, form):
-        response = super().form_invalid(form)
-        # Дополнительная проверка и отладка
-        print("Form is invalid. Returning to registration page.")
-        return response
-
 
 class LoginView(FormView):
+    model = User
     form_class = LoginForm
     template_name = 'pages/login.html'
-    success_url = reverse_lazy('home')
+    success_url = '/'
 
     def form_valid(self, form):
-        username = form.cleaned_data.get('username')
-        password = form.cleaned_data.get('password')
-        email = form.cleaned_data.get('email')
-
-        user = authenticate(username=username, password=password, email=email)
+        cleaned_data = form.cleaned_data
+        username = cleaned_data.get('username')
+        email = cleaned_data.get('email')
+        password = cleaned_data.get('password')
+        user = authenticate(username=username,
+                            email=email, password=password)
+        print(username)
+        print(email)
+        print(password)
 
         if user is not None:
             if user.is_active:
                 login(self.request, user)
                 return redirect('home')
             else:
-                return HttpResponse('Ваш аккаунт заблокирован')
+                return HttpResponse('User have been banned')
         else:
-            return HttpResponse(' Такого пользователя не существует')
-
+            return HttpResponse('Wrong data or user is not found')
 
 def logout_view(request):
     if request.user.is_authenticated:

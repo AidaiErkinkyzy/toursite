@@ -18,7 +18,7 @@ class Reserv(models.Model):
 
     name = models.CharField(max_length=100, verbose_name="Guest Name")
     phone_number = models.CharField(max_length=15, verbose_name="Phone Number")
-    number_of_guests = models.PositiveSmallIntegerField(choices=GUEST_NUMBER_CHOICES, verbose_name="Number of Guests")
+    number_of_guests = models.CharField(choices=GUEST_NUMBER_CHOICES, verbose_name="Number of Guests")
     check_in_date = models.DateField(verbose_name="Check-in Date")
     destination = models.CharField(max_length=50, choices=DESTINATION_CHOICES, verbose_name="Destination")
 

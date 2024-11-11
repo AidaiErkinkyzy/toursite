@@ -57,56 +57,55 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <form id="reservation-form" name="gs" method="submit" role="search" action="#">
+          <form id="reservation-form" name="gs" method="POST">
+              {% csrf_token %}
             <div class="row">
               <div class="col-lg-12">
                 <h4>Сделай <em> бронирование </em> через <em> эту форму </em></h4>
               </div>
               <div class="col-lg-6">
                   <fieldset>
+
+
                       <label for="Name" class="form-label">Name</label>
-                      <input type="text" name="Name" class="Name" placeholder="Your Name" autocomplete="on" required>
+                      {{form.name}}
                   </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
+
                     <label for="Number" class="form-label">Phone Number</label>
-                    <input type="text" name="Number" class="Number" placeholder="Your Phone Number" autocomplete="on" required>
+                    {{form.phone_number}}
+
                 </fieldset>
               </div>
               <div class="col-lg-6">
                   <fieldset>
+
                       <label for="chooseGuests" class="form-label">Number Of Guests</label>
-                      <select name="Guests" class="form-select" aria-label="Default select example" id="chooseGuests" onChange="this.form.click()">
-                          <option selected>Number Of Guests</option>
-                          <option type="checkbox" name="option1" value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-<!--                          <option value="4+">4+</option>-->
-                      </select>
+                      {{form.number_of_guests}}
+
                   </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
+
                     <label for="Number" class="form-label">Check In Date</label>
-                    <input type="date" name="date" class="date" required>
+                    {{form.check_in_date}}
+
                 </fieldset>
               </div>
               <div class="col-lg-12">
                   <fieldset>
+
                       <label for="chooseDestination" class="form-label">Destination</label>
-                      <select name="Destination" class="form-select" aria-label="Default select example" id="chooseCategory" onChange="this.form.click()">
-                          <option selected>Choose Your Destination</option>
-                          <option value="Italy, Roma">Italy, Roma</option>
-                          <option value="France, Paris">France, Paris</option>
-                          <option value="Engaland, London">Engaland, London</option>
-                          <option value="Switzerland, Lausanne">Switzerland, Lausanne</option>
-                      </select>
+                      {{form.destination}}
+
                   </fieldset>
               </div>
               <div class="col-lg-12">
                   <fieldset>
-                      <button class="main-button">Забронируйте Сейчас</button>
+                      <button class="main-button" type = "submit">Забронируйте Сейчас</button>
                   </fieldset>
               </div>
             </div>
@@ -116,21 +115,21 @@
     </div>
   </div>
 
- <div class="call-to-action">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <h2>Вы хотите путешествовать?</h2>
-          <h4>Сделайте заказ, нажав кнопку</h4>
-        </div>
-        <div class="col-lg-4">
-          <div class="border-button">
-            <a href="{% url 'reservation' %}">забронируй сейчас</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- <div class="call-to-action">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-lg-8">-->
+<!--          <h2>Вы хотите путешествовать?</h2>-->
+<!--          <h4>Сделайте заказ, нажав кнопку</h4>-->
+<!--        </div>-->
+<!--        <div class="col-lg-4">-->
+<!--          <div class="border-button">-->
+<!--            <a href="{% url 'reservation' %}">забронируй сейчас</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->

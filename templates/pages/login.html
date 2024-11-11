@@ -25,7 +25,7 @@
                   </div>
                 </div>
               </div>
-              <form method="post" action="{% url 'login' %}">
+              <form method="post" action="">
                 {% csrf_token %}
                 <div class="row gy-3 overflow-hidden">
                     <div class="col-12">
@@ -36,13 +36,13 @@
                     </div>
                     <div class="col-12">
                       <div class="form-floating mb-3">
-                          {{ form.email}}
+                          {{ form.email }}
                           <label for="email">Электронная почта</label>
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-floating mb-3">
-                          {{ form.password}}
+                          {{ form.password }}
                           <label for="password">Пароль</label>
                       </div>
                     </div>
@@ -55,20 +55,20 @@
             </form>
 
 
- <div class="call-to-action">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <h2>Вы хотите путешествовать?</h2>
-          <h4>Сделайте заказ, нажав кнопку</h4>
-        </div>
-        <div class="col-lg-4">
-          <div class="border-button">
-            <a href="{% url 'reservation' %}">забронируй сейчас</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- <div class="call-to-action">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-lg-8">-->
+<!--          <h2>Вы хотите путешествовать?</h2>-->
+<!--          <h4>Сделайте заказ, нажав кнопку</h4>-->
+<!--        </div>-->
+<!--        <div class="col-lg-4">-->
+<!--          <div class="border-button">-->
+<!--            <a href="{% url 'reservation' %}">забронируй сейчас</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
 {% endblock %}

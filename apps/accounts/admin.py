@@ -7,4 +7,5 @@ from .models import User  # Ensure the import statement is correct
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'username', 'gender', 'second_name', 'email', 'avatar', 'phone_number')
+
